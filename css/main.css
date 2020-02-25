@@ -1,0 +1,71 @@
+
+.header {
+    grid-area: header;
+    background: lightblue;
+    color: white;
+    font-family: 'Times New Roman',serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+  }
+a {
+  color: black;
+}
+  .main {
+    grid-area: main;
+    /*Background: pink;*/
+    color: black;
+    font-family: 'Times New Roman',serif;
+    font-size: 17px;
+  letter-spacing: 0.5px;
+
+  }
+
+#spacing {
+  letter-spacing: 1px;
+
+}
+  #heading {
+    font-style: italic;
+    font-family:'Times New Roman',serif;
+    font-size: 25px;
+    text-decoration: overline;
+    color: teal;
+
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background: lightgray;
+    color: black;
+    font-family: 'Courier New',monospace;
+    font-size: 15px;
+
+  }
+
+  .footer {
+    grid-area: footer;
+    /*background: orange;*/
+    color: black;
+    font-family: 'Times New Roman',serif;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+
+  }
+#address {
+  text-decoration: underline;
+}
+.container {
+    display: grid;
+    grid-template-columns: 20px auto 300px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: auto auto auto 300px;
+    /*grid-template-rows: repeat(3, 200px); */
+    grid-column-gap: 10px;
+   grid-row-gap: 15px;
+
+    grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "footer footer footer"
+}
